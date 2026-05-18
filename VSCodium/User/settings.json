@@ -1,0 +1,8 @@
+{
+  "workbench.colorTheme": "Quiet Light",
+  "window.restoreWindows": "none",
+  "terminal.integrated.env.linux": {
+    "SSH_AUTH_SOCK": "/home/$USER/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock"
+  },
+  "scm.defaultViewMode": "tree"
+}
