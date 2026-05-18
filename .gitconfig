@@ -1,0 +1,6 @@
+[core]
+	editor = codium --wait
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
