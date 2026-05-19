@@ -21,3 +21,4 @@ alias start-docker="sudo systemctl start docker.socket"
 alias start-syncthing="docker compose -f '/home/$USER/DockerApps/syncthing-client/docker-compose.yml' start"
 alias stop-syncthing="docker compose -f '/home/$USER/DockerApps/syncthing-client/docker-compose.yml' stop"
 
+alias pico8="/opt/pico-8/pico8"
