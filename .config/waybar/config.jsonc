@@ -36,17 +36,21 @@
         "all-outputs": true,
         "warp-on-scroll": false,
         // "format": "{name}: {icon}",
-        "format": "{name}: {icon}",
+        "format": "{icon}",
         "format-icons": {
+            "Main": "",
+            "Dev": "",
+            "Docs": "",
+            "Misc": "",
             //"1": "",
             //"2": "",
             //"3": "",
             //"4": "",
             //"5": "",
-            "urgent": "",
-            "focused": "",
-            "active": "",
-            "default": ""
+            "urgent": ""
+            // "focused": ""
+            // "active": ""
+            // "default": ""
         }
     },
     "keyboard-state": {

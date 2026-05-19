@@ -192,9 +192,29 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 --     rounding    = 0,
 -- })
 hl.workspace_rule({
-    workspace = "name:Main",
+    workspace = "1",
+    default_name = "Main",
     monitor = "eDP-1",
-    persistent = true
+    persistent = true,
+    default = true
+})
+hl.workspace_rule({
+    workspace = "2",
+    default_name = "Dev",
+    monitor = "eDP-1",
+    persistent = true,
+})
+hl.workspace_rule({
+    workspace = "3",
+    default_name = "Docs",
+    monitor = "eDP-1",
+    persistent = true,
+})
+hl.workspace_rule({
+    workspace = "4",
+    default_name = "Misc",
+    monitor = "eDP-1",
+    persistent = true,
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
@@ -300,6 +320,8 @@ for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
     -- hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     -- hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+    -- local namedWorkspace = {"Main", "Dev", "Docs", "Misc"}
+    -- local workspaceIndex = namedWorkspace[i] or i
     hl.bind("CTRL + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind("CTRL + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
