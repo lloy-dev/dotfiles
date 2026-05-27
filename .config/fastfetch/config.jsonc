@@ -20,17 +20,17 @@
     // "terminal",
     "terminalfont",
     "break",
-    "cpu",
-    // {
-    //     "type": "cpu",
-    //     "temp": true,
-    // },
+    // "cpu",
+    {
+        "type": "cpu",
+        "temp": true
+    },
     "cpuusage",
-    "gpu",
-    // {
-    //     "type": "gpu",
-    //     "temp": true,
-    // },
+    // "gpu",
+    {
+        "type": "gpu",
+        "temp": true
+    },
     "memory",
     "swap",
     "break",

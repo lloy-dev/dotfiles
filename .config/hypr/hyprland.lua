@@ -58,6 +58,7 @@ hl.on("hyprland.start", function ()
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
+  hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("waybar & hyprpaper")
 end)
 
@@ -200,18 +201,24 @@ hl.workspace_rule({
 })
 hl.workspace_rule({
     workspace = "2",
-    default_name = "Dev",
+    default_name = "Net",
     monitor = "eDP-1",
     persistent = true,
 })
 hl.workspace_rule({
     workspace = "3",
-    default_name = "Docs",
+    default_name = "Dev",
     monitor = "eDP-1",
     persistent = true,
 })
 hl.workspace_rule({
     workspace = "4",
+    default_name = "Test",
+    monitor = "eDP-1",
+    persistent = true,
+})
+hl.workspace_rule({
+    workspace = "5",
     default_name = "Misc",
     monitor = "eDP-1",
     persistent = true,

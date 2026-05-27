@@ -39,8 +39,9 @@
         "format": "{icon}",
         "format-icons": {
             "Main": "",
+	    "Net": "",
             "Dev": "",
-            "Docs": "",
+            "Test": "",
             "Misc": "",
             //"1": "",
             //"2": "",
