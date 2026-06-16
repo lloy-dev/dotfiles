@@ -1,6 +1,11 @@
 [core]
-	editor = codium --wait
-[gpg]
-	format = ssh
+	editor = nvim
 [commit]
 	gpgsign = true
+[tag]
+  gpgSign = true
+[gpg]
+	format = ssh
+
+[includeIf "gitdir:~/PATH/TO/DIRECTORY/**"]
+  path = ~/PATH/TO/DIRECTORY/.gitconfig

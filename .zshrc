@@ -6,15 +6,16 @@ export NVM_DIR="$HOME/.nvm"
 
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK=/home/$USER/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
+# alias bw-ssh-agent="export SSH_AUTH_SOCK=/home/$USER/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock"
 
 # Replace ls with eza
 # alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
-alias ls='ls -al'
-alias vim='nvim'
+alias ls="ls -al"
+alias vim="nvim"
 alias pico8="/opt/pico-8/pico8"
 
 # Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
+alias cleanup="sudo pacman -Rns (pacman -Qtdq)"
 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
@@ -23,3 +24,11 @@ alias jctl="journalctl -p 3 -xb"
 alias start-docker="sudo systemctl start docker.socket"
 alias start-syncthing="docker compose -f '/home/$USER/DockerApps/syncthing-client/docker-compose.yml' start"
 alias stop-syncthing="docker compose -f '/home/$USER/DockerApps/syncthing-client/docker-compose.yml' stop"
+
+# tmux Aliases
+alias tmux-dev="tmux new -As dev"
+alias tmux-sysad="tmux new -As sys-admin"
+
+# Tailscale
+alias taildrop-send="tailscale file cp" # <files> <name-or-ip>:
+alias taildrop-get="sudo tailscale file get ."

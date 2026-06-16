@@ -11,12 +11,17 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.opt.clipboard:append("unnamedplus")
 
--- https://github.com/rose-pine/neovim
 vim.pack.add({
+-- https://github.com/rose-pine/neovim
 	{
 		src = "https://github.com/rose-pine/neovim",
 		name = "rose-pine",
 	},
+-- https://github.com/tpope/vim-fugitive
+  {
+    src = "https://tpope.io/vim/fugitive.git",
+    name = "vim-fugitive",
+  },
 })
 require("rose-pine").setup({
   variant = "dawn"
