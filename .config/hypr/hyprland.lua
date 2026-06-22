@@ -21,16 +21,23 @@ hl.monitor({
     position = "auto",
     scale    = "auto",
 })
+-- RoG Zephyrus G14 Setting
+-- hl.monitor({
+--     output   = "eDP-1",
+--     mode     = "preferred",
+--     position = "auto",
+--     scale    = "1",
+-- })
+-- hl.monitor({
+--     output   = "DP-1",
+--     mode     = "preferred",
+--     position = "auto-left",
+--     scale    = "auto",
+-- })
 hl.monitor({
-    output   = "eDP-1",
-    mode     = "preferred",
+    output   = "HDMI-A-1",
+    mode     = "1920x1080@120.00Hz",
     position = "auto",
-    scale    = "1",
-})
-hl.monitor({
-    output   = "DP-1",
-    mode     = "preferred",
-    position = "auto-left",
     scale    = "auto",
 })
 
@@ -195,32 +202,32 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 hl.workspace_rule({
     workspace = "1",
     default_name = "Main",
-    monitor = "eDP-1",
+    -- monitor = "eDP-1",
     persistent = true,
     default = true
 })
 hl.workspace_rule({
     workspace = "2",
     default_name = "Net",
-    monitor = "eDP-1",
+    -- monitor = "eDP-1",
     persistent = true,
 })
 hl.workspace_rule({
     workspace = "3",
     default_name = "Dev",
-    monitor = "eDP-1",
+    -- monitor = "eDP-1",
     persistent = true,
 })
 hl.workspace_rule({
     workspace = "4",
     default_name = "Test",
-    monitor = "eDP-1",
+    -- monitor = "eDP-1",
     persistent = true,
 })
 hl.workspace_rule({
     workspace = "5",
     default_name = "Misc",
-    monitor = "eDP-1",
+    -- monitor = "eDP-1",
     persistent = true,
 })
 
